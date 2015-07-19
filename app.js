@@ -31,14 +31,29 @@ Retourne une clé par processeur avec les données correspondantes
 ##Raporteurs
 Genere une sortie suivant les données
 
+##Options
+parseur
+
+
+##Modules
+File stats ( sloc )
+Quality
+Git
+TODO
+
+
+// Preprocc ?
 */
 
 const sourceur = require("./sourceurs/file.js");
+const accumulateur = require("./accumulator.js");
+const processors = [require("./processeurs/sloc.process.js")];
+const reporters = [require("./rapporteurs/json.reporter.js")];
 
+var input = "tests/*.js";
 
-function run() {
-  var input = [] ; // liste noms fichiers
-
-
-
-}
+sourceur(input)
+.then((data) => accumulateur(processors,data))
+.then((data) => {
+  reporters.forEach(reporter => reporter(data));
+});

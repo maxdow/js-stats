@@ -1,0 +1,27 @@
+{
+  "name": "js-stats",
+  "version": "0.0.1",
+  "description": "Get metrics from your code",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxdow/js-stats.git"
+  },
+  "keywords": [
+    "metrics",
+    "stats",
+    "analyse"
+  ],
+  "author": "Maxime Warnier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxdow/js-stats/issues"
+  },
+  "homepage": "https://github.com/maxdow/js-stats#readme"
+}

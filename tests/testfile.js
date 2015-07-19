@@ -1,6 +1,8 @@
-//var libtest = require("libtest.js");
+var testfile2 = require("./testfile2.js");
 
-
+/**
+Ceci est un commentaire
+*/
 function blabla() {
   return "je suis une fonction qui dit coucou"
 }
